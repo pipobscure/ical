@@ -17,13 +17,13 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/",
-    "src/"
+    "dist/"
   ],
   "scripts": {
     "build": "tsc",
-    "check": "tsc --noEmit",
-    "test": "npm run build && node --experimental-strip-types --test 'test/**/*.test.ts'"
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --experimental-strip-types --test 'test/**/*.test.ts'",
+    "postversion": "git push --follow-tags"
   },
   "devDependencies": {
     "@types/node": "^25.3.0",
