@@ -1,0 +1,45 @@
+{
+  "name": "@pipobscure/ical",
+  "version": "0.0.1",
+  "description": "Full iCalendar (RFC 5545) implementation — tolerant parsing, strict generation",
+  "type": "module",
+  "author": "Philipp Dunkel <pip@pipobscure.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipobscure/ical"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --experimental-strip-types --test 'test/**/*.test.ts'"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "EUPL-1.2",
+  "keywords": [
+    "ical",
+    "icalendar",
+    "calendar",
+    "ics",
+    "rfc5545",
+    "vevent",
+    "vtodo"
+  ]
+}
