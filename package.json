@@ -1,6 +1,6 @@
 {
   "name": "@pipobscure/ical",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Full iCalendar (RFC 5545) implementation — tolerant parsing, strict generation",
   "type": "module",
   "author": "Philipp Dunkel <pip@pipobscure.com>",
